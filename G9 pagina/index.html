@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9IMPORTS - Tienda de Productos Importados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="80" cy="100" r="60" fill="#1a3a8f"/>
+                    <path d="M65 70 Q50 70 45 85 Q40 100 45 115 Q50 130 65 130 Q77 130 85 120 L85 105 L65 105 L65 90 L100 90 L100 130 Q85 145 65 145 Q40 145 30 120 Q20 100 30 75 Q40 55 65 55 Q85 55 100 70 L85 85 Q75 70 65 70 Z" fill="white"/>
+                    <circle cx="140" cy="85" r="20" fill="white"/>
+                    <path d="M140 65 Q120 65 120 85 Q120 105 140 105 Q160 105 160 85 Q160 65 140 65 Z M140 50 Q175 50 175 85 Q175 110 155 115 L155 145 L130 145 L130 115 Q110 110 105 85 Q105 50 140 50 Z" fill="white"/>
+                    <path d="M190 70 L240 70 L240 145 L215 145 L215 90 L190 90 Z" fill="white"/>
+                    <path d="M190 55 L240 55 L240 70 L190 70 Z" fill="white"/>
+                    <rect x="190" y="100" width="25" height="10" fill="white"/>
+                </svg>
+            </div>
+            <div class="site-name">G9IMPORTS</div>
+        </header>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="categorias/botes.html">Botes</a></li>
+                    <li class="menu-item"><a href="categorias/cargadores.html">Cargadores</a></li>
+                    <li class="menu-item"><a href="categorias/pantallas.html">Pantallas de Carro</a></li>
+                    <li class="menu-item"><a href="about.html">Nosotros</a></li>
+                    <li class="menu-item"><a href="contact.html">Contacto</a></li>
+                    <li class="menu-item"><a href="cart.html">Carrito</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <h2>Pantallas de Carro en Oferta</h2>
+                            <p>Disfruta de la mejor tecnología para tu vehículo con nuestras pantallas táctiles.</p>
+                            <button class="shop-now">Ver Ofertas</button>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Botes de Alta Calidad</h2>
+                            <p>Navega con confianza y estilo con nuestra selección de botes importados.</p>
+                            <button class="shop-now">Explorar</button>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Cargadores Premium</h2>
+                            <p>Mantén tus dispositivos siempre con energía con nuestros cargadores de alta velocidad.</p>
+                            <button class="shop-now">Comprar Ahora</button>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev">&#10094;</button>
+                    <button class="carousel-control next">&#10095;</button>
+                </div>
+                
+                <h2 class="section-title">Productos Destacados</h2>
+                
+                <div class="products-grid">
+                    <!-- Producto 1 - Bote Stanley -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/imagenesbotes/stanley.jpg" alt="Bote Stanley">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-title">Bote Stanley Premium</div>
+                            <div class="product-description">Bote térmico de alta calidad con aislamiento de primera clase.</div>
+                            <div class="product-price">$1,299.99</div>
+                            <a href="productos/botesstanley.html" class="view-product">Ver Producto</a>
+                            <button class="add-to-cart" data-id="1" data-name="Bote Stanley Premium" data-price="1299.99">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 - Bote Yeti -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/imagenesbotes/yeti.jpg" alt="Bote Yeti">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-title">Bote Yeti Deluxe</div>
+                            <div class="product-description">Bote con aislamiento superior para mantener tus bebidas a la temperatura ideal.</div>
+                            <div class="product-price">$1,499.99</div>
+                            <a href="productos/botesyeti.html" class="view-product">Ver Producto</a>
+                            <button class="add-to-cart" data-id="2" data-name="Bote Yeti Deluxe" data-price="1499.99">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 - Cargador Premium -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/imagenescargadores/cargador1.jpg" alt="Cargador Premium">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-title">Cargador Ultra Rápido</div>
+                            <div class="product-description">Cargador de alta potencia para tus dispositivos. Carga completa en minutos.</div>
+                            <div class="product-price">$899.99</div>
+                            <a href="productos/cargadores1.html" class="view-product">Ver Producto</a>
+                            <button class="add-to-cart" data-id="3" data-name="Cargador Ultra Rápido" data-price="899.99">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4 - Pantalla para Carro -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/imagenespantallas/pantalla1.jpg" alt="Pantalla para Carro">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-title">Pantalla Táctil 10"</div>
+                            <div class="product-description">Pantalla táctil de alta resolución compatible con Apple CarPlay y Android Auto.</div>
+                            <div class="product-price">$4,599.99</div>
+                            <a href="productos/pantallascarro.html" class="view-product">Ver Producto</a>
+                            <button class="add-to-cart" data-id="4" data-name="Pantalla Táctil 10 pulgadas" data-price="4599.99">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 G9IMPORTS - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
