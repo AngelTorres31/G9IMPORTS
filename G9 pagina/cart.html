@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - G9IMPORTS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="80" cy="100" r="60" fill="#1a3a8f"/>
+                    <path d="M65 70 Q50 70 45 85 Q40 100 45 115 Q50 130 65 130 Q77 130 85 120 L85 105 L65 105 L65 90 L100 90 L100 130 Q85 145 65 145 Q40 145 30 120 Q20 100 30 75 Q40 55 65 55 Q85 55 100 70 L85 85 Q75 70 65 70 Z" fill="white"/>
+                    <circle cx="140" cy="85" r="20" fill="white"/>
+                    <path d="M140 65 Q120 65 120 85 Q120 105 140 105 Q160 105 160 85 Q160 65 140 65 Z M140 50 Q175 50 175 85 Q175 110 155 115 L155 145 L130 145 L130 115 Q110 110 105 85 Q105 50 140 50 Z" fill="white"/>
+                    <path d="M190 70 L240 70 L240 145 L215 145 L215 90 L190 90 Z" fill="white"/>
+                    <path d="M190 55 L240 55 L240 70 L190 70 Z" fill="white"/>
+                    <rect x="190" y="100" width="25" height="10" fill="white"/>
+                </svg>
+            </div>
+            <div class="site-name">G9IMPORTS</div>
+        </header>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="categorias/botes.html">Botes</a></li>
+                    <li class="menu-item"><a href="categorias/cargadores.html">Cargadores</a></li>
+                    <li class="menu-item"><a href="categorias/pantallas.html">Pantallas de Carro</a></li>
+                    <li class="menu-item"><a href="about.html">Nosotros</a></li>
+                    <li class="menu-item"><a href="contact.html">Contacto</a></li>
+                    <li class="menu-item"><a href="cart.html">Carrito</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <div class="cart-container">
+                    <h1 class="cart-title">Carrito de Compras</h1>
+                    
+                    <!-- Contenido del carrito cuando tiene productos -->
+                    <div class="cart-content">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Subtotal</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cart-items">
+                                <!-- Los items del carrito se añadirán dinámicamente aquí -->
+                            </tbody>
+                        </table>
+                        
+                        <div class="cart-summary">
+                            <div class="cart-totals">
+                                <div class="cart-totals-row">
+                                    <span>Subtotal</span>
+                                    <span class="cart-subtotal-value">$0.00</span>
+                                </div>
+                                <div class="cart-totals-row">
+                                    <span>Envío</span>
+                                    <span>Gratis</span>
+                                </div>
+                                <div class="cart-totals-row total">
+                                    <span>Total</span>
+                                    <span class="cart-total-value">$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-buttons">
+                            <button class="cart-continue">Continuar Comprando</button>
+                            <button class="cart-checkout">Finalizar Compra</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Mensaje cuando el carrito está vacío -->
+                    <div class="cart-empty">
+                        <p>Tu carrito está vacío</p>
+                        <a href="index.html" class="cart-empty-button">Ir a Tienda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 G9IMPORTS - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <script>
+        // Redirigir al inicio cuando se hace clic en "Continuar Comprando"
+        document.querySelector('.cart-continue').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
