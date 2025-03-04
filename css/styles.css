@@ -7,13 +7,16 @@
 }
 
 :root {
-    --color-dark-blue: #1c4953;
+    --color-dark-blue: #296b6b;
     --color-light-blue: #3d99d9;
     --color-white: #ffffff;
     --color-gray: #f5f5f5;
     --color-dark-gray: #333333;
 }
-
+.logo-img {
+    width: 150px;
+    height: auto;
+}
 body {
     background-color: var(--color-gray);
 }
@@ -28,14 +31,16 @@ body {
 header {
     background-color: var(--color-white);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Cambiado de row a column para centrado */
+    justify-content: center;
     align-items: center;
-    padding: 35px 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(233, 2, 2, 0.1);
 }
 
 .logo {
     width: 150px;
+    margin-bottom: 10px; /* Espacio entre logo y nombre */
 }
 
 .site-name {
@@ -43,6 +48,7 @@ header {
     font-weight: bold;
     color: var(--color-dark-blue);
     text-transform: uppercase;
+    text-align: center; /* Asegurar centrado del texto */
 }
 
 /* Contenido principal */
@@ -96,7 +102,7 @@ header {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 2px 5px rgba(196, 36, 36, 0.1);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
 }
 
 .carousel-inner {
@@ -121,13 +127,13 @@ header {
 .carousel-item h2 {
     font-size: 28px;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    text-shadow: 1px 1px 3px rgb(253, 0, 0);
 }
 
 .carousel-item p {
     font-size: 18px;
     max-width: 600px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-item button {
@@ -147,22 +153,22 @@ header {
 }
 
 .carousel-item:nth-child(1) {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/imagenespantallas/carousel.jpg') center/cover;
+    background: linear-gradient(rgb(255, 255, 255), rgba(0,0,0,0.5)), url('../img/imagenespantallas/carousel.jpg') center/cover;
 }
 
 .carousel-item:nth-child(2) {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/imagenesbotes/carousel.jpg') center/cover;
+    background: linear-gradient(rgb(255, 255, 255), rgba(0,0,0,0.5)), url('../img/imagenesbotes/carousel.jpg') center/cover;
 }
 
 .carousel-item:nth-child(3) {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/imagenescargadores/carousel.jpg') center/cover;
+    background: linear-gradient(rgb(255, 255, 255), rgba(0,0,0,0.5)), url('../img/imagenescargadores/carousel.jpg') center/cover;
 }
 
 .carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     width: 40px;
     height: 40px;
@@ -173,7 +179,7 @@ header {
 }
 
 .carousel-control:hover {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgb(17, 0, 0);
 }
 
 .carousel-control.prev {
@@ -195,7 +201,7 @@ header {
     background-color: var(--color-white);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -620,10 +626,122 @@ footer {
     background-color: var(--color-dark-blue);
 }
 
+/* Estilos para el recibo */
+.receipt-page {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-confirmation {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.order-confirmation h2 {
+    color: var(--color-dark-blue);
+    margin-bottom: 20px;
+}
+
+.order-confirmation p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 15px 0;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.continue-shopping, .print-receipt {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: var(--color-light-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-shopping:hover, .print-receipt:hover {
+    background-color: var(--color-dark-blue);
+}
+
+.print-receipt {
+    background-color: var(--color-dark-gray);
+}
+
+.print-receipt:hover {
+    background-color: #222222;
+}
+
+/* Formulario de cliente */
+.customer-info {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.customer-info-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-dark-blue);
+    margin-bottom: 15px;
+}
+
+.customer-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    min-height: 80px;
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
         padding: 15px;
     }
     
@@ -651,5 +769,14 @@ footer {
     .cart-table {
         display: block;
         overflow-x: auto;
+    }
+    
+    .cart-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cart-continue, .cart-checkout {
+        width: 100%;
     }
 }
